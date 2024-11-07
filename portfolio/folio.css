@@ -1,0 +1,255 @@
+* {                        /* universal selector- applies style to all element*/
+  box-sizing: border-box; /* sets the box sizing to bbox for all element ensuring that width,height include padding and border*/
+  margin: 0;    
+  padding: 0;              /* resets the default margin and padding to 0 for all element*/
+}
+
+body {
+  background-color: #081b29;
+  color: white;
+}
+
+.header {
+  position: fixed;    /* creates a fixed header at the top of the page*/
+  top: 0;
+  left: 0;
+  display: flex;      /*enables flexbox layout aligning element horizontally*/
+  width: 100%;
+  padding: 20px 10%;
+  justify-content: space-between;   /*distributes spaces btw items pushing them to the edges*/
+             
+}
+
+.logo{
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+span{
+  color: gold;
+}
+
+.navbar a{
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-right: 15px;
+  transition: 1s;
+}
+
+.navbar a:hover{
+  color: gold;
+}
+
+
+
+
+
+.home{
+display: flex;   /*sets up full viewport height with flex layout*/
+height: 100vh;
+padding: 0 10% ;
+align-items: center;
+}
+
+.home-content{
+  max-width: 600px;
+}
+
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.home-content p{
+  margin: 20px 0px;
+
+}
+
+.image img{
+  border-radius: 40%;
+  width: 300px;
+
+}
+
+
+
+
+
+.about{
+  display: flex;
+  align-items: center;
+  padding: 12px 8%;
+  gap: 10em;
+}
+
+.about-image img{
+border-radius: 40%;
+width: 300px;
+position: relative;
+}
+
+.about-content h2{
+font-size: 42px;
+}
+
+.about-content h3{
+  font-size: 30px;
+  color: red;
+}
+.about-content p{
+  font-size: 20px;
+  margin: 20px;
+}
+
+
+
+.project{
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 60px;
+   
+ }
+ .projects{
+   display: flex;
+   justify-content: center;
+ }
+ .e{
+   border: none;
+   padding: 40px 30px;
+   margin: 30px;
+   background-color: white;
+   border-radius: 50%;
+ }
+ .projects a {
+  text-decoration: none;
+  color: #0073e6;
+  transition:  0.3s;
+  cursor: pointer;
+}
+
+.projects a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+
+
+
+.contact-form{
+  text-align: center;
+  margin: 30px;
+}
+.contact-form h2{
+  margin: 20px;
+}
+.contact-form form{
+  max-width: 100%;
+}
+
+.contact-form form .input-f{
+  display: block;
+}
+  .input-f input,
+  .contact-form form textarea{
+    width: 55%;
+    padding:20px;      /*adds 20 of padding inside each input and txtarea*/
+    margin-bottom: 10px; /* add space below each input & textarea*/
+  }
+
+  .submit-button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   transition: 0.3s;
+  }
+
+  .submit-button:hover{
+   background-color: blue;
+   color: rgb(229, 255, 0);
+  }
+
+
+
+
+  
+  
+.footer {
+  background-color: white;      
+  padding: 20px ;                  /* space around footer */
+
+}
+
+.footer .media {
+  display: flex;
+  justify-content: center;
+  gap: 25px;                      /* space btw icons*/
+               
+}
+
+.footer .media a {
+  color: blue;                     
+  font-size: 1.5rem;              /* size of icon*/ 
+  transition: 1s ;     
+}
+
+.footer .media a:hover {
+  color: red;                  
+}
+
+.copyright{
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack elements vertically */
+    position: relative;
+  }
+  .home-content{
+    max-width: 300px;
+  }
+  .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .image img{
+    width: 100%;
+  }
+  
+
+  .about-image img {
+    width: 100%; /* Make image responsive */
+  }
+
+.about{
+  padding: none;
+  gap: 0;
+}
+  
+  .e{
+    margin: 7px;
+  }
+}
+
+
+
+
+  
